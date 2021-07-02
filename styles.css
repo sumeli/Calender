@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+
+body{
+    margin: 0;
+    }
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: large;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #D8E3E7;
+}
+
+.calender{
+    margin: auto;
+    width: 600px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 3px grey;
+}
+
+.month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    text-align: center;
+    background-color: #77ACF1;
+    color: white;
+    padding: 40px 30px;
+}
+
+.weekdays{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #3180e7;
+    color: white;
+    padding: 7px 0px;
+}
+
+.days{
+    width: 14.28%;
+    text-align: center;
+}
+
+.Ddays{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.Ddays div{
+    width: 14.28%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.Ddays div:hover{
+    background-color: rgb(187, 183, 183);
+}
+
+.prev-date{
+    color: grey;
+}
+
+.next-date{
+    color: grey;
+}
+
+.today{
+    background-color: #3180e7;
+    color: white;
+}
+
+.prevsign, .nextsign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: all 0.4sec;
+}
+ 
+.prevsign:hover, .nextsign:hover{
+
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
